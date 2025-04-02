@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Criminal Records</title>
+    <link rel="stylesheet" href="./css/view_criminals.css">
+    <script src="./js/view_criminals.js" defer></script>
+</head>
+<body>
+    <div class="search-container">
+        <h1>Search Criminal Records</h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Enter Criminal Name...">
+            <button onclick="searchCriminal()">🔍</button>
+        </div>
+    </div>
+
+    <div id="results-container" class="hidden">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Crime</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="records-body">
+            </tbody>
+        </table>
+    </div>
+
+    <button onclick="goBack()" class="back-button">Back</button>
+</body>
+</html>

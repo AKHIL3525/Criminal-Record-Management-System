@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Criminal</title>
+    <link rel="stylesheet" href="./css/add_criminal.css">
+    <script src="./js/add_criminal.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Criminal Record</h1>
+        <form id="criminalForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="crime">Crime:</label>
+            <input type="text" id="crime" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="status">Status:</label>
+            <select id="status">
+                <option value="Arrested">Arrested</option>
+                <option value="Released">Released</option>
+                <option value="Under Investigation">Under Investigation</option>
+            </select>
+
+            <button type="submit">Add Criminal</button>
+        </form>
+    </div>
+
+    <div id="popup" class="popup hidden">
+        <p>Criminal record added successfully!</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</body>
+</html>
